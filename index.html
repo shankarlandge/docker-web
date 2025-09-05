@@ -1,17 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to My Docker Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shankar Landge — 3D   Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Hi, I'm <span id="typed-text"></span></h1>
-    <p>This website is running inside a Docker container on AWS EC2 🎉</p>
-    <button onclick="changeColor()">Click Me</button>
+  <nav class="nav">
+    <div class="logo">Shankar<span>Landge</span></div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero" data-depth="0.6">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="layer l1"></div>
+        <div class="layer l2"></div>
+        <div class="layer l3"></div>
+        <div class="layer l4"></div>
+      </div>
+<div class="hero-inner">
+  <div class="profile-3d" id="profile-3d">
+    <div class="profile-card">
+      <div class="glow"></div>
+       <img src="images/Shankar.JPG" alt= "Shankar Landge"class="profile-img" />
+
+      <figcaption class="profile-name">Shankar Landge</figcaption>
+    </div>
   </div>
 
-  <script src="script.js"></script>
+        <div class="intro">
+          <h1>Hi — I'm <span class="name">Shankar</span></h1>
+          <h2 class="typed" id="typed-text"></h2>
+          <p class="lead">Cloud & DevOps Engineer • AWS · Docker · Kubernetes · CI/CD</p>
+          <div class="cta">
+  <a class="btn" href="images/Shankar_Landge.pdf" download="Shankar_Landge_CV.pdf">📄 View Resume</a>
+
+
+  <a class="btn ghost" href="#contact">✉️ Contact</a>
+</div>
+
+        </div>
+      </div>
+      
+    </section>
+    
+
+    <!-- ABOUT -->
+    <section id="about" class="panel">
+      <h2>About Me</h2>
+      <p>I am a Cloud & DevOps Engineer with experience in designing, deploying, and managing scalable cloud infrastructure. I specialize in AWS services like EC2, RDS, S3, ECS/EKS, Lambda, and CloudFormation.  
+    I have expertise in containerization and orchestration using Docker and Kubernetes, and I automate CI/CD pipelines with Jenkins and GitHub Actions.  
+    My work involves monitoring, security best practices, and optimizing cloud cost.  
+    I also have experience in Linux administration, scripting, and managing cloud-based databases.  
+    I am passionate about building reliable, automated, and efficient systems that help teams deliver high-quality software faster.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="panel">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><img src="images/aws.png" alt=""><span>AWS</span></div>
+        <div class="skill"><img src="images/docker.png" alt=""><span>Docker</span></div>
+        <div class="skill"><img src="images/jenkins.png" alt=""><span>Jenkins</span></div>
+        <div class="skill"><img src="images/cloud.png" alt=""><span>Kubernetes</span></div>
+        <div class="skill"><img src="images/Linux.png" alt=""><span>Linux</span></div>
+        <div class="skill"><img src="images/GitHub Actions.png" alt=""><span>GitHub</span></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="panel">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card" data-tilt>
+          <img src="images/aws.png" alt="">
+          <h3>AWS 3-Tier</h3>
+          <p>Terraform + EC2 + RDS + S3 — secure and scalable deployment.</p>
+        </article>
+
+        <article class="card" data-tilt>
+          <img src="images/docker.png" alt="">
+          <h3>Dockerized Node App</h3>
+          <p>Containerized backend, CI with GitHub Actions, deployed to ECS.</p>
+        </article>
+
+        <article class="card" data-tilt>
+          <img src="images/jenkins.png" alt="">
+          <h3>Jenkins CI/CD</h3>
+          <p>Automated build-test-deploy pipelines with blue-green deployments.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="panel">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:shankar.landge52@gmail.com">shankar.landge52@gmail.com</a> • Phone: <a href="tel:+918459285553">+91 8459285553</a></p>
+      <div class="socials">
+        <a href="https://github.com/shankarlandge" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/shankarlandge" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <small>© 2025 Shankar Landge — Built with HTML, CSS & JS (3D)</small>
+  </footer>
 </body>
 </html>
